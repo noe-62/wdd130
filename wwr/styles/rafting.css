@@ -85,3 +85,6 @@
     object-fit: contain;
     margin: 0 8px;
   }
+  .socialmedia a {
+    text-decoration: none;
+  }
