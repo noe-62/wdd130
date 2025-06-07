@@ -1,4 +1,4 @@
-/* Step 1: Variables using :root */
+/* Variables using :root */
 :root {
     --primary-color: #3EB3F2;
     --accent1-color: #F3742F;
@@ -7,38 +7,98 @@
     --body-font: 'Open Sans', sans-serif;
   }
   
-  /* Step 2: Reset CSS box model */
+  /* Reset CSS box model */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Step 3: Base styles */
+  /* Base styles */
   body {
     font-family: var(--body-font);
     color: var(--accent1-color);
   }
   
-  /* Step 4: Layout centering */
+  /* Layout centering */
   header, main, footer {
     width: 840px;
     margin: 0 auto;
   }
+
+  /* Header layout */
+header {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
   
-  /* Step 5: Headings */
+  /* Headings */
   h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
   }
   
-  /* Step 6: General spacing */
-  nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-  }
-  
-  /* Step 7: Hero section styles */
+  /* General spacing */
+p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+  /* Style History */
+section:nth-of-type(1) {
+  background-color: #f9f7f3;
+  border-left: 4px solid var(--primary-color);
+  padding: 16px;
+}
+/* Adventure Gallery */
+.adventure-gallery img {
+  width: 100%;
+  height: 120px; /* You can adjust height as needed */
+  object-fit: cover; /* Ensures image fills the box without distortion */
+  border-radius: 4px;
+  display: block;
+}
+.adventures {
+  text-align: center;
+  margin: 32px 0;
+}
+.adventures h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 8px;
+  overflow-x: auto; /* Optional for smaller screens */
+}
+
+.adventure-gallery figure {
+  width: 150px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+  /* Flexbox navigation */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  /* Hero section styles */
   .hero {
     position: relative;
   }
@@ -70,7 +130,7 @@
     width: 60%;
   }
   
-  /* Step 8: Float image in hero article */
+  /* Float image in hero article */
   .hero article img {
     float: right;
     width: 125px;
@@ -78,12 +138,21 @@
     margin-bottom: 5px;
   }
   
-  /* Step 9: Standardize social media logos */
+  /* Standardize social media logos */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+
   .socialmedia img {
     width: 40px;
     height: 40px;
     object-fit: contain;
     margin: 0 8px;
+    padding: 4px;
   }
   .socialmedia a {
     text-decoration: none;
