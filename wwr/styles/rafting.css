@@ -137,6 +137,48 @@ nav {
     margin-left: 10px;
     margin-bottom: 5px;
   }
+  .contact-form, .contact-info, .employees, .map {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  employees {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .employee-group {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Wraps on smaller screens */
+    margin-top: 1rem;
+  }
+  
+  .employee-group figure {
+    width: 200px;
+    margin: 0;
+  }
+  
+  .employee-group img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .employee-group figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #f3742f;
+  }
   
   /* Standardize social media logos */
 
