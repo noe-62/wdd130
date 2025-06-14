@@ -1,7 +1,7 @@
 /* Variables using :root */
 :root {
     --primary-color: #3EB3F2;
-    --accent1-color: #131110;
+    --accent1-color: #0802ac;
     --accent2-color: #F9F7F3;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
@@ -204,4 +204,144 @@ nav {
     width: 100%;
     height: 300px;
   }
-  
+  /* --- Contact Form Enhancements --- */
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2a8ec9; /* Slightly darker on hover */
+}
+
+trips-intro {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.trip-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 840px;
+}
+
+.trip-gallery figure {
+  width: 250px;
+  text-align: center;
+}
+
+.trip-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.trip-table {
+  padding: 2rem 1rem;
+  max-width: 840px;
+  margin: auto;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+/* Style radio buttons and their labels */
+.contact-form input[type="radio"] {
+  transform: scale(1.4); /* Make the radio buttons bigger */
+  margin-right: 0.5rem;
+  accent-color: var(--primary-color); /* Adds theme color */
+}
+
+.contact-form fieldset {
+  border: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--accent1-color);
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #2a8ec9;
+  transform: scale(1.05);
+}
+.contact-form input[type="checkbox"] {
+  transform: scale(1.4);
+  margin-right: 0.5rem;
+  accent-color: var(--primary-color);
+}
+/* Align checkbox and label left */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
